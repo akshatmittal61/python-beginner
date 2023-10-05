@@ -25,13 +25,20 @@
 # print(n1 / n2)  # Division -> 3 / 2 = 1.5
 # print(n1 ** n2)  # Exponent -> 3 ** 2 = 9
 
-try:
-    n1 = int(input('Enter num 1: '))
-    n2 = int(input('Enter num 2: '))
-    print(f'Add: {n1 + n2}')
-except ValueError as e:
-    print(e)
-finally:
-    print('Done with it')
+# try:
+#     n1 = int(input('Enter num 1: '))
+#     n2 = int(input('Enter num 2: '))
+#     print(f'Add: {n1 + n2}')
+# except ValueError as e:
+#     print(e)
+# finally:
+#     print('Done with it')
 # except:
 #     print('Something went wrong')
+
+fruits = ['Apple', 'Mango', 'Banana']
+print(len(fruits))
+fruits.append('Papaya')
+fruits.insert(1, 'Pineapple')
+fruits.sort()  # Works in-place
+print(fruits, fruits[1], fruits[:3], fruits[1:3], fruits[-1], fruits[-1:-3], fruits[-3:-1])
