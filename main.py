@@ -36,9 +36,23 @@
 # except:
 #     print('Something went wrong')
 
-fruits = ['Apple', 'Mango', 'Banana']
-print(len(fruits))
-fruits.append('Papaya')
-fruits.insert(1, 'Pineapple')
-fruits.sort()  # Works in-place
-print(fruits, fruits[1], fruits[:3], fruits[1:3], fruits[-1], fruits[-1:-3], fruits[-3:-1])
+# fruits = ['Apple', 'Mango', 'Banana']
+# print(len(fruits))
+# fruits.append('Papaya')
+# fruits.insert(1, 'Pineapple')
+# fruits.sort()  # Works in-place
+# print(fruits, fruits[1], fruits[:3], fruits[1:3], fruits[-1], fruits[-1:-3], fruits[-3:-1])
+
+user = {
+    'name': 'Akshat',
+    'age': 21,
+    'stack': 'full',
+    'tags': ['developer', 'poet', 'hunter']
+}
+print(user, len(user), len(user['tags']))
+user['weather'] = 'fall'
+users = []
+users.append(user)
+users.append('null')
+users.append(7)
+print(users)
