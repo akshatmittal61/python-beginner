@@ -73,5 +73,6 @@ def generate_username(name, emp_id):
     return first_char + second_char + num_id
 
 
-username = generate_username('Akshat mittal', 'emp102947')
+# username = generate_username('Akshat mittal', 'emp102947')
+username = generate_username(emp_id='emp102947', name='Jane doe')
 print(username)
