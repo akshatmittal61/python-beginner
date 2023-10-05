@@ -42,17 +42,26 @@
 # fruits.insert(1, 'Pineapple')
 # fruits.sort()  # Works in-place
 # print(fruits, fruits[1], fruits[:3], fruits[1:3], fruits[-1], fruits[-1:-3], fruits[-3:-1])
+#
+# user = {
+#     'name': 'Akshat',
+#     'age': 21,
+#     'stack': 'full',
+#     'tags': ['developer', 'poet', 'hunter']
+# }
+# print(user, len(user), len(user['tags']))
+# user['weather'] = 'fall'
+# users = []
+# users.append(user)
+# users.append('null')
+# users.append(7)
+# print(users)
 
-user = {
-    'name': 'Akshat',
-    'age': 21,
-    'stack': 'full',
-    'tags': ['developer', 'poet', 'hunter']
-}
-print(user, len(user), len(user['tags']))
-user['weather'] = 'fall'
-users = []
-users.append(user)
-users.append('null')
-users.append(7)
-print(users)
+
+people = ['Jane', 'Kate', 'Christopher', 'Fiona']
+
+for person in people:
+    print(person.capitalize())
+
+for i in range(1, 21, 2):
+    print(i)
