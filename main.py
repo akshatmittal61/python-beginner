@@ -58,10 +58,20 @@
 # print(users)
 
 
-people = ['Jane', 'Kate', 'Christopher', 'Fiona']
+# people = ['Jane', 'Kate', 'Christopher', 'Fiona']
+#
+# for person in people:
+#     print(person.capitalize())
+#
+# for i in range(1, 21, 2):
+#     print(i)
 
-for person in people:
-    print(person.capitalize())
+def generate_username(name, emp_id):
+    first_char = name.split()[0][0].lower()
+    second_char = name.split()[1][0].lower()
+    num_id = emp_id[-3:]
+    return first_char + second_char + num_id
 
-for i in range(1, 21, 2):
-    print(i)
+
+username = generate_username('Akshat mittal', 'emp102947')
+print(username)
