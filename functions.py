@@ -15,4 +15,4 @@ print((lambda x,y: x+y)(4,5))
 
 # make a lambda function to print average of all number args
 
-lambda
+lambda *args: sum(args)/len(args)
